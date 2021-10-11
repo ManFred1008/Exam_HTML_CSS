@@ -1,0 +1,68 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #283136;
+}
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.nav {
+   width: 100%;
+   background-color: #eeeeee;
+}
+
+.nav .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 50px;
+}
+
+.nav__menu ul {
+   list-style: none;
+   display: flex;
+}
+
+.nav__menu ul li a,
+.nav__trolley a {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: #000000;
+}
+
+.nav__menu ul li a:hover,
+.nav__trolley a:hover {
+   color: rgb(221, 113, 12);
+   text-shadow: 0 0 3px;
+}
+
+
+.nav__menu ul li:not(:first-child) {
+   margin-left: 50px;
+}
+
+.nav__trolley a::before {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background-image: url(/images/icon_trolley.png);
+   margin-right: 25px;
+}
+
+/* .nav__trolley a:hover .nav__trolley a::before {
+   width: 25px;
+   height: 25px;
+   background-color: aqua;
+   background-size: cover;
+} */
