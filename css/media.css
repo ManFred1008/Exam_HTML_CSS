@@ -1,0 +1,391 @@
+@media (max-width: 2560px) and (min-width: 1441px) {
+
+   .contacts__logo {
+      right: 320px;
+      bottom: 169px;
+   }
+}
+
+@media (max-width: 1024px) {
+
+   .container {
+      width: 90%;
+   }
+
+   .nav__logo {
+      flex: 3 1;
+      text-align: center;
+   }
+
+   .nav__toggle {
+      display: block;
+      position: fixed;
+      top: 30px;
+      left: 40px;
+      z-index: 2;
+   }
+
+   .nav__menu ul {
+      position: fixed;
+      left: -180px;
+      top: 0;
+      transition: all 0.5s 0.1s;
+   }
+   
+   .nav__menu ul li:last-child {
+      display: block;
+   }
+
+   #check:checked ~ ul {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: all 0.5s 0.1s;
+   }
+
+   #check:checked ~ .nav__toggle span {
+      background-color: transparent;
+      transition: all 0.5s 0.1s;
+   }
+
+   #check:checked ~ .nav__toggle span::before {
+      top: 6px;
+      left: -5px;
+      transform: rotate(-45deg);
+      transition: all 0.5s 0.1s;
+   }
+
+   #check:checked ~ .nav__toggle span::after {
+      top: 0px;
+      left: -5px;
+      transform: rotate(45deg);
+      transition: all 0.5s 0.1s;
+   }
+
+   .nav__menu {
+      position: relative;
+   }
+
+   .nav__menu ul {
+      width: 180px;
+      height: 400px;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      background-color: #666666;
+      opacity: 0.9;
+      z-index: 1;
+   }
+
+   .nav__menu ul li:not(:first-child) {
+      margin-left: 0;
+   }
+
+   .nav__menu li {
+      padding: 20px 0;
+   }
+
+   .nav__menu li a {
+      display: block;
+      padding: 0;
+      color: #fff;
+   }
+
+   .nav__menu li:last-child {
+      margin-bottom: 30px;
+   }
+
+   .nav__trolley {
+      display: none;
+   }
+
+   .promo__text {
+      width: 50%;
+   }
+
+   .text_part p {
+      color: #000;
+   }
+
+   .order .container {
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .order__item {
+      flex-direction: row;
+      flex: 1 1;
+      /* width: 100%; */
+      justify-content: center;
+      align-items: center;
+   }
+
+   .order__item:not(:first-child) {
+      margin-top: 30px;
+   }
+
+   .order__item_text {
+      margin: 0;
+      padding: 0 20px;
+   }
+   
+   .about__second .advant_list {
+      width: 40%;
+   }
+
+   .about__first .text_part {
+      width: 50%;
+   }
+
+   .about__first .text_part h2 {
+      font-size: 36px;
+      line-height: 36px;
+   }
+
+   .contacts__logo {
+      right: 210px;
+   }
+}
+
+@media (max-width: 768px) {
+
+   .promo .container {
+      align-items: center;
+      background-position: bottom center;
+   }
+
+   .promo__text h2 {
+      font-size: 48px;
+   }
+
+   .promo__buttons {
+      flex-direction: column;
+
+   }
+
+   .btn_wrap,
+   .promo__choice {
+   width: 100%;
+   }
+
+   .btn_wrap {
+      margin-bottom: 30px;
+   }
+
+   .btn_wrap .but_general {
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 0 15px darkred;
+   }
+
+   .order__item_text p {
+      padding: 20px 0;
+   }
+
+   .about__first {
+      flex-direction: column-reverse;
+      justify-content: space-around;
+   }
+
+   .about__first .text_part {
+      width: 80%;
+      padding-top: 0px;
+      text-align: center;
+   }
+
+   .about__first .nerds_img {
+      margin-top: 20px;
+      background-position: center;
+   }
+
+   .about__second {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .about__second .text_list h2,
+   .about__second .advant_list h2 {
+      font-size: 24px;
+   }
+
+   .about__second .advant_list h2 {
+      margin: 50px 0 30px;
+   }
+
+   .about__second .advant_list {
+      width: 80%;
+      align-items: center;
+   }
+
+   .levels {
+      width: 80%;
+   }
+
+   .partners .container {
+      flex-wrap: wrap;
+   }
+
+   .partners__item {
+      min-width: 40%;
+   }
+
+   .partners__item:not(:last-child) {
+      margin-bottom: 30px;
+   }
+
+   .contacts {
+      padding: 50px 0;
+   }
+
+   .contacts__logo {
+      right: 90px;
+   }
+
+   .sotial .container {
+      flex-direction: column-reverse;
+   }
+
+   .sotial__messenger {
+      margin-top: 30px;
+   }
+
+   .sotial .text_part p {
+      text-align: center;
+   }
+}
+
+@media (max-width: 426px) {
+
+   .container {
+      width: 100%;
+   }
+
+   .promo__text {
+      width: 90%;
+      text-align: center;
+   }
+
+   .promo__text h2 {
+      text-align: center;
+   }
+
+   .order__item {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .order__item:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .order__item_text {
+      margin-top: 20px;
+      padding: 0;
+      text-align: center;
+   }
+
+   .about .container {
+      padding-bottom: 50px;
+   }
+
+   .about__first .nerds_img {
+      width: 80%;
+      margin: 30px 0;
+   }
+
+   .about__first .text_part {
+      width: 90%;
+   }
+
+   .about__second .text_list {
+      width: 90%;
+   }
+
+   .about__second .text_list h2 {
+      text-align: center;
+   }
+
+   .about__second .advant_list {
+      width: 100%;
+   }
+   .about__second .advant_list h2 {
+      width: 90%;
+   }
+
+   .levels {
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .levels_item {
+      min-width: 40%;
+      max-width: 50%;
+      text-align: center;
+   }
+
+   .levels_item:last-child {
+      margin-top: 30px;
+   }
+
+   .levels_item p {
+      width: 80%;
+      margin: 0 auto;
+   }
+
+   .partners__item {
+    min-width: 100%;
+   }
+
+   .partners__item:not(:last-child) {
+   margin-bottom: 50px;
+   }
+
+   .contacts {
+      padding: 0;
+   }
+
+   .contacts .container {
+      display: flex;
+      justify-content: center;
+   }
+
+   .contacts__info {
+      position: relative;
+      width: 50%;
+      bottom: 0;
+   }
+
+   .contacts__logo {
+      right: 10px;
+      top: -308px;
+      height: 0;
+   }
+
+   .contacts__logo img {
+      width: 150px;
+   }
+
+   .sotial .container {
+      padding-bottom: 30px;
+   }
+
+   .sotial .text_part {
+      width: 90%;
+      text-align: center;
+   }
+}
+
+@media (max-width: 376px) {
+
+   .contacts__logo {
+      right: 12px;
+      top: -281px;
+   }
+
+   .contacts__logo img {
+      width: 120px;
+   }
+
+
+}
+
