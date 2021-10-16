@@ -378,6 +378,10 @@
 
 @media (max-width: 376px) {
 
+   .promo__text h2 {
+      font-size: 36px;
+   }
+
    .contacts__logo {
       right: 12px;
       top: -281px;
@@ -386,7 +390,11 @@
    .contacts__logo img {
       width: 120px;
    }
+}
 
-
+@media (max-width: 320px) {
+   .order__item_text {
+      width: 90%;
+   }
 }
 
