@@ -50,16 +50,17 @@
 
    #check:checked ~ .nav__toggle span::before {
       top: 6px;
-      left: -5px;
-      transform: rotate(-45deg);
-      transition: all 0.5s 0.1s;
+      left: 19px;
+      transform: rotate(325deg);
+      /* transform: rotate(-45deg); */
+      transition: all 0.3s 0.1s;
    }
 
    #check:checked ~ .nav__toggle span::after {
       top: 0px;
-      left: -5px;
-      transform: rotate(45deg);
-      transition: all 0.5s 0.1s;
+      left: 19px;
+      transform: rotate(-325deg);
+      transition: all 0.3s 0.1s;
    }
 
    .nav__menu {
